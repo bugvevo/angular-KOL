@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MessageAction, MessageBusService } from '../message-bus.service';
 
 @Component({
 	selector: 'app-inner-browser',
@@ -6,7 +7,12 @@ import { Component } from '@angular/core';
 	styleUrls: ['./inner-browser.component.scss'],
 })
 export class InnerBrowserComponent {
+	constructor(private messageBus: MessageBusService) {}
+
 	closeBrowserWindow() {
+		this.messageBus.push({
+			type: MessageAction.BrowserClosed,
+		});
 		console.log('closed mama');
 	}
 }

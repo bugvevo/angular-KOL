@@ -1,13 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { InnerBrowserComponent } from './inner-browser/inner-browser.component';
+import { Subscription } from 'rxjs';
+import { MessageAction, MessageBusService } from './message-bus.service';
 
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss'],
-	providers: [InnerBrowserComponent],
+	providers: [InnerBrowserComponent, MessageBusService],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+	private subscriptions: Subscription[] = [];
+
+	notifications: Notification[] = [];
+
+	constructor(private messageBus: MessageBusService) {}
+
+	ngOnInit() {
+		this.subscriptions = [
+			this.messageBus
+				.observe(MessageAction.BrowserClosed)
+				.subscribe((_) => (this.browserOpen = false)),
+		];
+	}
+
 	title = 'k-o-l';
 	browserOpen = false;
 
