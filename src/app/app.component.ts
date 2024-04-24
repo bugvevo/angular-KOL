@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { InnerBrowserComponent } from './inner-browser/inner-browser.component';
 
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss'],
+	providers: [InnerBrowserComponent],
 })
 export class AppComponent {
 	title = 'k-o-l';

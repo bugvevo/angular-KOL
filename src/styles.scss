@@ -1,12 +1,13 @@
 @use './styles/colors.scss';
 
 @font-face {
-    font-family: 'MS Sans Serif';
-    src: url('./styles/ms-sans-serif-1.ttf') format('truetype');
+    font-family: 'SH Pinscher';
+    src: url('./styles/SHPinscher-Regular.otf') format('opentype');
 }
 
 html {
-    font-family: 'MS Sans Serif';
+    font-family: 'SH Pinscher';
+    font-size: 18pt;
 }
 
 body {
