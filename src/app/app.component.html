@@ -8,7 +8,7 @@
 				</div>
 			</div>
 		</div>
-		<app-inner-browser></app-inner-browser>
+		<app-inner-browser *ngIf="browserOpen"></app-inner-browser>
 		<div class="desktop__bottom-bar">
 			<button (click)="onStartClick()">STARTTT</button>
 		</div>

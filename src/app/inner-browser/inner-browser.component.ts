@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
 	templateUrl: './inner-browser.component.html',
 	styleUrls: ['./inner-browser.component.scss'],
 })
-export class InnerBrowserComponent {}
+export class InnerBrowserComponent {
+	closeBrowserWindow() {
+		console.log('closed mama');
+	}
+}

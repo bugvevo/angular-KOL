@@ -1,0 +1,55 @@
+.window {
+    --windowWidth: 800px;
+
+	background-color: white;
+	border-image: url("../../assets/images/BrowserWindowNoBG.png");
+	border-image-slice: 98 180 36 140;
+	border-image-width: 98px 180px 36px 140px;
+	border-style: solid;
+	display: flex;
+	flex-direction: column;
+	height: 600px;
+	top: 36px;
+	left: 184px;
+	position: relative;
+	width: var(--windowWidth);
+
+	&__content-container {
+		height: 100%;
+		margin: 98px 10px 36px 10px;
+	}
+
+    &__toolbar-title-block-container {
+
+        --leftMargin: 36px;
+        --rightMargin: 10px;
+
+        position: absolute;
+        height: 48px;
+	    width: calc(var(--windowWidth) - (var(--rightMargin) + var(--leftMargin)));
+        margin: 8px  var(--rightMargin) 0 var(--leftMargin);
+    }
+
+    &__toolbar-title-block {
+        font-size: 14pt;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__small-button {
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border-radius: 5px 0 5px 0;
+        box-shadow: 1px var(--windowBorderHighlightShadow);
+        height: 18px;
+        width: 18px;
+        margin: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
