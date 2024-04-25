@@ -29,31 +29,30 @@ export class AppComponent implements OnInit {
 
 	desktopIcons = [
 		{
-			name: 'one',
-			imageSrc: './assets/images/BrowserIcon.png',
-		},
-		{
-			name: 'two',
-			imageSrc: './assets/images/BrowserIcon.png',
-		},
-		{
 			name: 'Browser',
-			imageSrc: './assets/images/BrowserIcon.png',
+			imageSrc: './assets/images/iconKernia.png',
+		},
+		{
+			name: 'HeartBound2: Bound Hearter',
+			imageSrc: './assets/images/iconHeartboundish.png',
+		},
+		{
+			name: 'The Doom Scolls Online: Calamity',
+			imageSrc: './assets/images/iconDoomscrolls.png',
+		},
+		{
+			name: 'readme.txt',
+			imageSrc: './assets/images/readme.png',
 		},
 	];
 
 	clickShortcut(shortcutName: string) {
 		switch (shortcutName) {
-			case 'one': {
-				console.log('you clicked one!');
-				break;
-			}
-			case 'two': {
-				console.log('you clicked two!');
-				break;
-			}
 			case 'Browser': {
 				this.clickBrowserIcon();
+				break;
+			}
+			default: {
 				break;
 			}
 		}

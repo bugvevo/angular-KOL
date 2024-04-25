@@ -66,6 +66,7 @@
     }
 
     &__breaking-news-ticker {
+        background-color: lightgrey;
 
         &__text {
             white-space: nowrap;
@@ -74,7 +75,7 @@
         }
 
         &__text span {
-            animation: ticker 8s linear infinite;
+            animation: ticker 9s linear infinite;
             display: inline-block;
             padding-left: calc(100% - 24px);
             margin-left: 50px;
