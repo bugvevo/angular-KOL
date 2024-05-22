@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { InnerBrowserComponent } from './inner-browser/inner-browser.component';
 import { Subscription } from 'rxjs';
 import { MessageAction, MessageBusService } from './message-bus.service';
+import { PostFeed } from './post-feed/post-feed.component';
 
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss'],
-	providers: [InnerBrowserComponent, MessageBusService],
+	providers: [InnerBrowserComponent, PostFeed, MessageBusService],
 })
 export class AppComponent implements OnInit {
 	private subscriptions: Subscription[] = [];

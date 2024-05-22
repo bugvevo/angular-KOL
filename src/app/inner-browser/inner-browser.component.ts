@@ -9,8 +9,6 @@ import { MessageAction, MessageBusService } from '../message-bus.service';
 export class InnerBrowserComponent {
 	constructor(private messageBus: MessageBusService) {}
 
-	breakingNewsText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do';
-
 	closeBrowserWindow() {
 		this.messageBus.push({
 			type: MessageAction.BrowserClosed,

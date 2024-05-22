@@ -1,9 +1,24 @@
 {
-	"username": "",
-	"alignment": "",
-	"date": "",
-	"listeningTo": "",
-	"feeling": "",
-	"attachment": "",
-	"text": ""
+	"posts": [
+		{
+			"username": "§ezgilandholm",
+			"alignment": "Liberation",
+			"location": "South Leitam",
+			"date": "11/1/2004",
+			"listeningTo": "",
+			"feeling": "",
+			"attachment": "",
+			"text": "‡KęrnïaDay,, more like……………………….  ¶……………turd day  ¶ ‡ihateithere"
+		},
+		{
+			"username": "§ayshamoller",
+			"alignment": "",
+			"location": "Bluehill",
+			"date": "10/23/2004",
+			"listeningTo": "",
+			"feeling": "",
+			"attachment": "",
+			"text": "A recent survey found that 61% of Kęrnïans are uncertain about the efficacy of Kęrnïan leadership after the assassination of Krumwel. 72% report that they would NOT have voted to re-elect him, and 46% would be willing to have an emergency referendum now that the First Marshal has taken power. ‡Statistics"
+		}
+	]
 }
