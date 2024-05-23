@@ -1,0 +1,27 @@
+.post-feed {
+    margin: 20px 10px;
+    overflow-y: scroll;
+    max-height: 100%;
+    padding-right: 6px;
+
+    &__feed {
+        list-style: none;
+    }
+
+    &__post {
+        border: 1px solid black;
+        margin: 8px 2px;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    }
+
+    &__post-metadata {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        padding: 2px 4px;
+    }
+
+    &__post-text {
+        padding: 2px 4px;
+    }
+}

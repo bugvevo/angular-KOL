@@ -27,8 +27,8 @@
 	&__content-container {
         display: flex;
         flex-direction: column;
-		height: 100%;
 		margin: 98px 10px 36px 10px;
+        overflow: hidden;
 	}
 
     &__toolbar-title-block-container {
@@ -66,12 +66,16 @@
     }
 
     &__breaking-news-ticker {
-        display: flex;
+        display: inline-flex;
         width: 100%;
         background: lightgray;
-        overflow: hidden;
         gap: 50px;
         margin-bottom: 10px;
+        min-height:max-content;
+
+        & div {
+            padding: 2px;
+        }
 
         &:hover div {
             animation-play-state: paused !important;
@@ -88,5 +92,9 @@
     &__breaking-news-ticker div:nth-child(2) {
         animation: ticker 10s linear infinite;
         animation-delay: -10s;
+    }
+
+    &__post-feed-container {
+        max-height: 446px;
     }
 }

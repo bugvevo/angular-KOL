@@ -1,13 +1,13 @@
 @use './styles/colors.scss';
 
 @font-face {
-    font-family: 'MS Sans Serif';
-    src: url('./styles/ms-sans-serif-1.ttf') format('opentype');
+    font-family: 'Open Sans Regular';
+    src: url('./styles/OpenSans-regular.ttf') format('truetype');
 }
 
 html {
-    font-family: 'MS Sans Serif';
-    font-size: 16pt;
+    font-family: 'Open Sans Regular';
+    font-size: 14px;
     background-color: black;
 }
 
