@@ -1,5 +1,5 @@
 <div class="post-feed">
-	<li class="post-feed__feed" *ngFor="let post of posts">
+	<li class="post-feed__feed" *ngFor="let post of availablePosts; index as i">
 		<div class="post-feed__post">
 			<div class="post-feed__post-content">
 				<div class="post-feed__post-metadata">
@@ -7,6 +7,17 @@
 					<div>{{ post.date }}</div>
 				</div>
 				<div class="post-feed__post-text">{{ post.text }}</div>
+				<div class="post-feed__buttons-container">
+					<button class="post-feed__button post-feed__propagate" type="button">
+						Propagate
+					</button>
+					<button class="post-feed__button post-feed__ignore" type="button">
+						Ignore
+					</button>
+					<button class="post-feed__button post-feed__censor" type="button">
+						Censor
+					</button>
+				</div>
 			</div>
 		</div>
 	</li>

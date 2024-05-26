@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import * as postData from '../../assets/data/posts.json';
+import { Post } from '../app-types';
 
 @Component({
 	selector: 'post-feed',
@@ -8,8 +9,15 @@ import * as postData from '../../assets/data/posts.json';
 })
 export class PostFeed {
 	postData = postData;
-	posts = this.postData.posts;
+	allPosts = this.postData.posts;
+
+	availablePosts: Post[] = [];
+
+	propagatedPosts: Post[] = [];
+	ignoredPosts: Post[] = [];
+	censoredPosts: Post[] = [];
+
 	ngOnInit() {
-		console.log(postData);
+		this.allPosts.forEach((value) => this.availablePosts.push(Object.assign({}, value)));
 	}
 }

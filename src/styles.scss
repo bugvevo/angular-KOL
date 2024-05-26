@@ -1,12 +1,15 @@
 @use './styles/colors.scss';
 
 @font-face {
-    font-family: 'Open Sans Regular';
+    font-family: 'Open Sans';
     src: url('./styles/OpenSans-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 html {
-    font-family: 'Open Sans Regular';
+    font-family: 'Open Sans';
+    font-style: normal;
     font-size: 14px;
     background-color: black;
 }
