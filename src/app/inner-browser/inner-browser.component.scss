@@ -16,8 +16,6 @@
 	border-image-slice: 98 180 36 140;
 	border-image-width: 98px 180px 36px 140px;
 	border-style: solid;
-	display: flex;
-	flex-direction: column;
 	height: 600px;
 	top: 36px;
 	left: 184px;
@@ -27,8 +25,12 @@
 	&__content-container {
         display: flex;
         flex-direction: column;
-		margin: 98px 10px 36px 10px;
         overflow: hidden;
+        position: absolute;
+        top: 98px;
+        margin: 0 10px 0 10px;
+        width: calc(100% - 20px);
+        height: 478px;
 	}
 
     &__toolbar-title-block-container {
@@ -72,6 +74,7 @@
         gap: 50px;
         margin-bottom: 10px;
         min-height:max-content;
+        flex: 0 1 0;
 
         & div {
             padding: 2px;
@@ -94,7 +97,16 @@
         animation-delay: -10s;
     }
 
+    &__feed-title {
+        padding-bottom: 8px;
+        margin: 0 8px;
+        flex: 0 1 0;
+        border-bottom: 1px solid black;
+    }
+
     &__post-feed-container {
-        max-height: 446px;
+        margin: 0 8px;
+        flex: 2 2 0;
+        overflow-y: scroll;
     }
 }
