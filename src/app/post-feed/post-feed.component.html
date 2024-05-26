@@ -8,13 +8,25 @@
 				</div>
 				<div class="post-feed__post-text">{{ post.text }}</div>
 				<div class="post-feed__buttons-container">
-					<button class="post-feed__button post-feed__propagate" type="button">
+					<button
+						class="post-feed__button post-feed__propagate"
+						type="button"
+						(click)="propagatePost(i)"
+					>
 						Propagate
 					</button>
-					<button class="post-feed__button post-feed__ignore" type="button">
+					<button
+						class="post-feed__button post-feed__ignore"
+						type="button"
+						(click)="ignorePost(i)"
+					>
 						Ignore
 					</button>
-					<button class="post-feed__button post-feed__censor" type="button">
+					<button
+						class="post-feed__button post-feed__censor"
+						type="button"
+						(click)="censorPost(i)"
+					>
 						Censor
 					</button>
 				</div>

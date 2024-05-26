@@ -20,4 +20,19 @@ export class PostFeed {
 	ngOnInit() {
 		this.allPosts.forEach((value) => this.availablePosts.push(Object.assign({}, value)));
 	}
+
+	propagatePost(index: number) {
+		this.propagatedPosts.push(this.availablePosts[index]);
+		this.availablePosts.splice(index, 1);
+	}
+
+	ignorePost(index: number) {
+		this.ignoredPosts.push(this.availablePosts[index]);
+		this.availablePosts.splice(index, 1);
+	}
+
+	censorPost(index: number) {
+		this.censoredPosts.push(this.availablePosts[index]);
+		this.availablePosts.splice(index, 1);
+	}
 }
