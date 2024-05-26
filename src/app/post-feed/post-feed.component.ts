@@ -18,7 +18,17 @@ export class PostFeed {
 	censoredPosts: Post[] = [];
 
 	ngOnInit() {
-		this.allPosts.forEach((value) => this.availablePosts.push(Object.assign({}, value)));
+		this.allPosts.forEach((rawPost) =>
+			this.availablePosts.push(
+				Object.assign({
+					username: rawPost.username,
+					alignment: rawPost.alignment,
+					location: rawPost.location,
+					date: rawPost.date,
+					text: rawPost.text,
+				})
+			)
+		);
 	}
 
 	propagatePost(index: number) {

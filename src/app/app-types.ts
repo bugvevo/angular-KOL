@@ -3,8 +3,5 @@ export interface Post {
 	alignment: string;
 	location: string;
 	date: string;
-	listeningTo: string;
-	feeling: string;
-	attachment: string;
 	text: string;
 }
