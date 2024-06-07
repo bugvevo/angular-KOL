@@ -4,6 +4,7 @@ import { filter, first } from 'rxjs/operators';
 
 export enum MessageAction {
 	BrowserClosed = 'BrowserClosed',
+	PostInteraction = 'PostInteraction',
 }
 
 export interface Message {

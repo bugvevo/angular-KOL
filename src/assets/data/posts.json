@@ -3,7 +3,8 @@
 		{
 			"username": "§ezgilandholm",
 			"name": "Ezgi Landhölm",
-			"alignment": "Liberation",
+			"alignment": "liberation",
+			"magnitude": 2,
 			"location": "South Leitam",
 			"date": "11/1/2004",
 			"listeningTo": "",
@@ -14,7 +15,8 @@
 		{
 			"username": "§ayshamoller",
 			"name": "Aÿsha Møller",
-			"alignment": "Liberation",
+			"alignment": "liberation",
+			"magnitude": 2,
 			"location": "Bluehill",
 			"date": "10/23/2004",
 			"listeningTo": "",
@@ -25,7 +27,8 @@
 		{
 			"username": "§sofeeaanchera",
 			"name": "Sofeea Anchera",
-			"alignment": "Passive",
+			"alignment": "passive",
+			"magnitude": 3,
 			"location": "Bluehill",
 			"date": "10/27/2004",
 			"listeningTo": "",
@@ -36,7 +39,8 @@
 		{
 			"username": "§ulissejahns",
 			"name": "Ulisse Jahns",
-			"alignment": "Passive",
+			"alignment": "passive",
+			"magnitude": 6,
 			"location": "Harbærg",
 			"date": "10/17/2004",
 			"listeningTo": "",
@@ -47,8 +51,9 @@
 		{
 			"username": "§hansomlandolin",
 			"name": "Hansom Landolín ",
-			"alignment": "State",
+			"alignment": "state",
 			"location": "Greenbriar",
+			"magnitude": 2,
 			"date": "10/14/2004",
 			"listeningTo": "",
 			"feeling": "",
@@ -58,7 +63,8 @@
 		{
 			"username": "§lyliabiltdonner",
 			"name": "Lylia Biltdönner",
-			"alignment": "State",
+			"alignment": "state",
+			"magnitude": 1,
 			"location": "Red River Valley",
 			"date": "11/18/2004",
 			"listeningTo": "",

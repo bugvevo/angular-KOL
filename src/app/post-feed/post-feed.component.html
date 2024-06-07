@@ -33,5 +33,8 @@
 			</div>
 		</div>
 	</li>
-	<div></div>
+	<div *ngIf="availablePosts.length === 0" class="post-feed__results">
+		State: {{ this.alignmentTotals.state }} Liberation:
+		{{ this.alignmentTotals.liberation }} Passive: {{ this.alignmentTotals.passive }}
+	</div>
 </div>
