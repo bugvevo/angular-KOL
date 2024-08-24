@@ -5,6 +5,7 @@
 /tmp
 /out-tsc
 /bazel-out
+kol-browser.zip
 
 # Node
 /node_modules
