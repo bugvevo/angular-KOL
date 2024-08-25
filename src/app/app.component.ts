@@ -34,10 +34,6 @@ export class AppComponent implements OnInit {
 			imageSrc: './assets/images/iconKernia.png',
 		},
 		{
-			name: 'HeartBound2: Bound Hearter',
-			imageSrc: './assets/images/iconHeartboundish.png',
-		},
-		{
 			name: 'The Doom Scrolls Online: Calamity',
 			imageSrc: './assets/images/iconDoomscrolls.png',
 		},
